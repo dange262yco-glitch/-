@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  background: #0d0d0d;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+  color: #fff;
+}
+
+.admin-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* ===== ЛЕВАЯ ПАНЕЛЬ ===== */
+.sidebar {
+  width: 300px;
+  background: #1a1a1a;
+  border-right: 1px solid #333;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.log-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.log-item {
+  padding: 12px;
+  background: #222;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.log-item:hover {
+  background: #333;
+}
+
+/* ===== ПРАВАЯ ПАНЕЛЬ ===== */
+.details {
+  flex: 1;
+  padding: 30px;
+}
+
+.details-box {
+  background: #222;
+  padding: 25px;
+  border-radius: 15px;
+  min-height: 200px;
+  font-size: 18px;
+  line-height: 1.6;
+}

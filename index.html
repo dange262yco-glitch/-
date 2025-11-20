@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Телефон</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="screen">
+
+  <!-- Кнопка "Отмена" -->
+  <div class="top-back">Отмена</div>
+
+  <div class="center">
+
+    <!-- PNG трубка -->
+    <img src="img/phone.png" class="phone-img" alt="phone">
+
+    <h1 class="title">Телефон</h1>
+
+    <p class="subtitle">
+      Проверьте код страны и введите<br>
+      свой номер телефона.
+    </p>
+
+    <!-- Выбор страны -->
+    <div id="country-selector" class="country-box">
+      <span id="country-flag" class="country-flag">🇷🇺</span>
+      <span id="country-name" class="country-name">Россия</span>
+      <span class="arrow">›</span>
+    </div>
+
+    <!-- Ввод телефона -->
+    <div class="phone-input-box">
+      <span id="phone-code" class="phone-code">+7</span>
+      <input id="phone-input" type="text" placeholder="000 000 0000" maxlength="12">
+    </div>
+
+  </div>
+
+  <!-- Кнопка -->
+  <button id="btn-phone" class="btn disabled" disabled>Продолжить</button>
+
+</div>
+
+<!-- Модальное окно выбора страны -->
+<div id="country-modal" class="modal hidden">
+  <div class="modal-drag"></div>
+  <input id="country-search" class="modal-search" type="text" placeholder="Поиск">
+  <div id="country-list" class="modal-list"></div>
+</div>
+
+<script src="phone.js"></script>
+</body>
+</html>
